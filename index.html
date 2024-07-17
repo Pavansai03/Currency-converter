@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link  rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/e782ebb853.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h2 id="heading">Currency Converter</h2>
+        <hr>
+        <div class="amountDetails">
+            <div class="fromDetails">
+                <div>Enter amount</div>
+                <input id="amtEnter" value="0" type="number"/>
+                
+            </div>
+            <div class="toDetails">
+                <div><span id="enteredAmt"></span>&nbsp<span id="fromCountry"></span> = <span id="exchangeAmt"></span>&nbsp<span id="toCountry"></span></div>
+            </div>
+        </div>
+        <hr>
+       
+        <div class="conversion">
+            <div class="from">
+                <div>from</div>
+                <img id="fromFLag" src="https://flagsapi.com/US/shiny/64.png" width="40vh"/>
+                <select id="fromSelect">
+                <option value="None">None</option>
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                </select>
+            </div>
+            <i class="fas fa-arrow-right-arrow-left"></i>
+
+            <div class="to">
+                <div>to</div>
+                <img id="toFLag" src="https://flagsapi.com/IN/shiny/64.png" width="40vh"/>
+                <select id="toSelect">
+                <option value="None">None</option>   
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+    </div>
+    <div class="finalbtn"><button id="exchange">Exchange Currency</buttom></div>
+    
+    </div>
+    
+<script src="codes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
